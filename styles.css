@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.main-header {
+    text-align: center;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5em;
+    border-bottom: 2px solid #444444;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    color: #feb47b;
+}
+
+h4 {
+    font-size: 1.2em;
+    color: #ff7e5f;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-btn, .not-available {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #444444;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.project-btn:hover {
+    background-color: #ff7e5f;
+}
+
+.not-available {
+    background-color: #555555;
+    cursor: not-allowed;
+}
+
+.project-container {
+    display: none;
+    padding: 20px;
+    background-color: #2b2b2b;
+}
+
+.project-header {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.version-section {
+    margin-bottom: 20px;
+}
+
+.version-card {
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.version-details p, 
+.version-details ul {
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.command-list, .keyword-list, .action-list {
+    margin-top: 20px;
+}
+
+code {
+    background-color: #444444;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 0.95em;
+}
+
+.highlight {
+    color: #ff7e5f;
+    font-weight: bold;
+}
+
+.back-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #444444;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #ff7e5f;
+}
+
+.subdued-list {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    font-style: italic;
+    color: #bbb;
+    font-weight: 300;
+}
+
+.subdued-list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
