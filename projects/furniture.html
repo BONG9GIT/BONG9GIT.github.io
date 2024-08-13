@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Project</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <div class="project-container" id="furniture-project">
+        <header class="project-header">
+            <h2>Furniture</h2>
+            <p>Display Entity Helper</p>
+            <a href="../index.html" class="back-btn">← Back to Projects</a>
+        </header>
+        
+        <section class="version-section">
+            <h3>2.0</h3>
+            <div class="version-card">
+                <ul class="subdued-list">
+                    <li>Raycast</li>
+                    <li>접근성 수정</li>
+                    <li>Fast Control</li>
+                </ul>
+                <div class="action-list">
+                    <h4>행동 안내</h4>
+                    <p><code>Drop key (ex. Q):</code> 선택중인 가구를 제거합니다.</p>
+                    <img src="../resources/delete.gif" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); border: 4px solid #1b1b1b; border-radius: 8px; width: 100%; max-width: 500px;">
+                    <p><code>LMB:</code> 가구를 생성하거나 배치합니다.</p>
+                    <img src="../resources/raytrace.gif" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); border: 4px solid #1b1b1b; border-radius: 8px; width: 100%; max-width: 500px;">
+                    <p><code>RMB:</code> 바라보는 방향의 가구를 선택합니다.</p>
+                    <img src="../resources/select.gif" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); border: 4px solid #1b1b1b; border-radius: 8px; width: 100%; max-width: 500px;">
+                    <p><code>Swap Key (ex. F):</code> 빠른 수정 모드를 변경합니다.</p>
+                    <p><code>휠 Up / Down:</code> 빠른 수정 모드의 값을 수정합니다.</p>
+                    <img src="../resources/fastcontrol.gif" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); border: 4px solid #1b1b1b; border-radius: 8px; width: 100%; max-width: 500px;">
+                    <p><code>아이템 클릭:</code> 작업 중 인벤토리에서 아이템을 선택하면 가구를 변경합니다.</p>
+                    <img src="../resources/pick.gif" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); border: 4px solid #1b1b1b; border-radius: 8px; width: 100%; max-width: 500px;">
+                </div>
+            </div>
+        </section>
+
+        <section class="version-section">
+            <h3>1.0</h3>
+            <div class="version-card">
+                <ul class="subdued-list">
+                    <li>회전 snap 기본값을 45도에서 22.5도로 낮췄습니다.</li>
+                    <li>직전 furniture 작업 내용이 임시 저장됩니다.</li>
+                    <li>yaw, pitch 키워드를 추가했습니다.</li>
+                </ul>
+                <div class="command-list">
+                    <h4>명령어 안내</h4>
+                    <p><code>/fwand</code> - 완드를 꺼냅니다.</p>
+                    <p><code>/flist [N]</code> - 커스텀 모델 번호 리스트를 탐색합니다.</p>
+                </div>
+                <div class="keyword-list">
+                    <h4>키워드 안내</h4>
+                    <p><code>100</code> - 커스텀 모델 데이터를 100으로 바꿉니다.</p>
+                    <p><code>type brick</code> - 아이템 타입을 변경합니다.</p>
+                    <p><code>offset 0 1 0.5</code> - 설치 좌표 오프셋을 (0, 1, 0.5)으로 설정합니다.</p>
+                    <p><code>y 1</code> - y 오프셋만 1로 설정합니다.</p>
+                    <p><code>scale 2</code> - 사이즈를 균등하게 2배 증가시킵니다.</p>
+                    <p><code>scale 1 2 0.5</code> - 사이즈를 (1, 2, 0.5)로 설정합니다.</p>
+                    <p><code>snap 0.5</code> - 모델을 0.5 사이즈의 격자로 정렬합니다.</p>
+                    <p><code>bright 9</code> - SkyLight, BlockLight를 9로 설정합니다.</p>
+                    <p><code>yaw 45</code> - 모델의 yaw를 45로 고정합니다.</p>
+                    <p><code>pitch 30</code> - 모델의 pitch를 30으로 고정합니다.</p>
+                    <p>모든 키워드는 모델링을 생성하는 과정에 사용됩니다.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
